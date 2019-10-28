@@ -1,9 +1,68 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Tab Three
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="search-page">
+  <ion-list-header>
+    Поиск
+  </ion-list-header>
+  <ion-segment (ionChange)="segmentChanged($event)" class="search-segment">
+    <ion-segment-button value="nanny">
+      <ion-label>Няни</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="housekeeper">
+      <ion-label>Домработницы</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="nurse">
+      <ion-label>Сиделки</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="tutor">
+      <ion-label>Репетиторы</ion-label>
+    </ion-segment-button>
+  </ion-segment>
 
-<ion-content></ion-content>
+  <ion-card class="resume-card">
+    <img src="https://r2.pomogatel.ru/m/eecddaa3eb2b4e42b61cf40467381a77.jpg" alt="" />
+    <ion-card-header>
+      <ion-card-title>Маргарита Евгеньева</ion-card-title>
+      <ion-card-subtitle>Няня</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Уход за ребенком, полная гигиена, уход за гардеробом, приготовление еды, кормление, прогулки, развивающие игры
+        и занятия по возрасту. Работа с проживанием...</p>
+    </ion-card-content>
+    <ion-item>        
+      <ion-button fill="outline" slot="end">Посмотреть</ion-button>
+    </ion-item>
+  </ion-card>
+  <ion-card class="resume-card">
+    <img src="https://r2.pomogatel.ru/m/e8287ec4dd7d496c91d08a7bbb1a3152.jpg" alt="" />
+    <ion-card-header>
+      <ion-card-title>Маргарита Евгеньева</ion-card-title>
+      <ion-card-subtitle>Няня</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Уход за ребенком, полная гигиена, уход за гардеробом, приготовление еды, кормление, прогулки, развивающие игры
+        и занятия по возрасту. Работа с проживанием...</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="resume-card">
+    <img src="https://r2.pomogatel.ru/m/6dc72019fd734bfc94b2433b42f26269.jpg" alt="" />
+    <ion-card-header>
+      <ion-card-title>Маргарита Евгеньева</ion-card-title>
+      <ion-card-subtitle>Няня</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Уход за ребенком, полная гигиена, уход за гардеробом, приготовление еды, кормление, прогулки, развивающие игры
+        и занятия по возрасту. Работа с проживанием...</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="resume-card">
+    <img src="https://r2.pomogatel.ru/m/ead14e01fe2846ff8783419ce6e0e549.jpg" alt="" />
+    <ion-card-header>
+      <ion-card-title>Маргарита Евгеньева</ion-card-title>
+      <ion-card-subtitle>Няня</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Уход за ребенком, полная гигиена, уход за гардеробом, приготовление еды, кормление, прогулки, развивающие игры
+        и занятия по возрасту. Работа с проживанием...</p>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
