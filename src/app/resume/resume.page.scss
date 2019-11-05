@@ -3,22 +3,21 @@
   &__header {
     display: flex;
     height: 100px;    
-    padding: 0 0 20px;
+    align-items: center;
+    padding: 0 10px;
   }
   &__ava {
     height: 80px;
     width: 80px;
     position: relative;
     margin-right: 10px;
+    flex: 0 0 80px;
     img {
       position: relative;
       height: 100%;
       width: 100%;
       border-radius: 50%;
     }
-  }
-  &__info {
-    padding-top: 10px;
   }
   &__title {
     font-size: 18px;
