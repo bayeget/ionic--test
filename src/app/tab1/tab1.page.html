@@ -1,34 +1,119 @@
+<ion-content>
 
-<ion-content >
+
+  <!-- нет созданных объявлений -->
+  <ng-container *ngIf="false">
+    <ion-list-header>У вас пока нет созданных объявлений</ion-list-header>
+    <ion-chip color="primary">
+      <ion-icon name="add"></ion-icon>
+      <ion-label>Создать объявление</ion-label>
+    </ion-chip>
+  </ng-container>
+
+
+  <!-- <div class="card card--vacancy">
+    <div class="card__title">Домработница 1 раз в неделю</div>
+    <div class="card__location">Москва , Калужская</div>
+    <div class="card__description">Нужна домработница 1 раз в неделю, полный рабочий день. Моющие средства для влажной и сухой уборки предоставляем.</div>
+    <div class="card__control"></div>
+  </div> -->
+
+  <!-- пример страницы с объявлением -->
+  <ng-container *ngIf="true">
+    <div class="nav-bar">
+      <div class="nav-bar__item ">Няни</div>
+      <div class="nav-bar__item nav-bar__item--active">Домработницы</div>
+      <div class="nav-bar__item nav-bar__item--disable">Сиделки</div>
+      <div class="nav-bar__item nav-bar__item--disable">Репетиторы</div>
+    </div>
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+      <!-- <ion-chip color="primary" outline>
+                <ion-icon name="add"></ion-icon>
+                <ion-label>Создать объявление</ion-label>
+              </ion-chip> -->
+      <ion-fab-button>
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+
+
+
     <ion-card class="welcome-card">
-      <img src="/assets/shapes.svg" alt="" />
-      <ion-card-header>
-        <ion-card-subtitle>Get Started</ion-card-subtitle>
-        <ion-card-title>Welcome to Ionic</ion-card-title>
+      <ion-badge color="primary">Идет поиск</ion-badge>
+      <ion-card-header>          
+        <ion-card-title>Домработница 1 раз в неделю</ion-card-title>
+        <ion-card-subtitle>Москва , Калужская</ion-card-subtitle>
       </ion-card-header>
       <ion-card-content>
-        <p>Now that your app has been created, you'll want to start building out features and components. Check out some of the resources below for next steps.</p>
+        <p>Нужна домработница 1 раз в неделю, полный рабочий день. Моющие средства для влажной и сухой уборки
+          предоставляем</p>
+        <ion-button color="primary" size="small">Отклики</ion-button>
+        <ion-button color="danger" size="small">
+            <ion-icon name="play"></ion-icon>Активировать
+        </ion-button>
       </ion-card-content>
+
     </ion-card>
-    <ion-list lines="none">
-      <ion-list-header>
-        <ion-label>Resources</ion-label>
-      </ion-list-header>
-      <ion-item href="https://ionicframework.com/docs/">
-        <ion-icon slot="start" color="medium" name="book"></ion-icon>
-        <ion-label>Ionic Documentation</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/building/scaffolding">
-        <ion-icon slot="start" color="medium" name="build"></ion-icon>
-        <ion-label>Scaffold Out Your App</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/layout/structure">
-        <ion-icon slot="start" color="medium" name="grid"></ion-icon>
-        <ion-label>Change Your App Layout</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/theming/basics">
-        <ion-icon slot="start" color="medium" name="color-fill"></ion-icon>
-        <ion-label>Theme Your App</ion-label>
-      </ion-item>
-    </ion-list>
+
+    <ion-list-header>Подобранные работники:</ion-list-header>
+
+    <ion-item button>
+      <ion-thumbnail slot="start">
+        <img src="https://r2.pomogatel.ru/m/e8287ec4dd7d496c91d08a7bbb1a3152.jpg">
+      </ion-thumbnail>
+      <ion-label>
+        <h2>Маргарита Евгеньева</h2>
+        <p>Возраст: 70 лет</p>
+        <p>Опыт: 10 лет и более</p>
+        <p>Оплата: от 1500 до 2000 руб./за выход</p>
+      </ion-label>
+    </ion-item>
+    <ion-item button>
+      <ion-thumbnail slot="start">
+        <img src="https://r2.pomogatel.ru/m/6dc72019fd734bfc94b2433b42f26269.jpg">
+      </ion-thumbnail>
+      <ion-label>
+        <h2>Маргарита Евгеньева</h2>
+        <p>Возраст: 70 лет</p>
+        <p>Опыт: 10 лет и более</p>
+        <p>Оплата: от 1500 до 2000 руб./за выход</p>
+      </ion-label>
+    </ion-item>
+    <ion-item button disabled>
+      <ion-thumbnail slot="start">
+        <img src="https://r2.pomogatel.ru/m/eecddaa3eb2b4e42b61cf40467381a77.jpg">
+      </ion-thumbnail>
+      <ion-label>
+        <h2>Маргарита Евгеньева</h2>
+        <p>Возраст: 70 лет</p>
+        <p>Опыт: 10 лет и более</p>
+        <p>Оплата: от 1500 до 2000 руб./за выход</p>
+      </ion-label>
+    </ion-item>
+    <ion-item button>
+      <ion-thumbnail slot="start">
+        <img src="https://r2.pomogatel.ru/m/6dc72019fd734bfc94b2433b42f26269.jpg">
+      </ion-thumbnail>
+      <ion-label>
+        <h2>Маргарита Евгеньева</h2>
+        <p>Возраст: 70 лет</p>
+        <p>Опыт: 10 лет и более</p>
+        <p>Оплата: от 1500 до 2000 руб./за выход</p>
+      </ion-label>
+    </ion-item>
+    <ion-item button disabled>
+      <ion-thumbnail slot="start">
+        <img src="https://r2.pomogatel.ru/m/eecddaa3eb2b4e42b61cf40467381a77.jpg">
+      </ion-thumbnail>
+      <ion-label>
+        <h2>Маргарита Евгеньева</h2>
+        <p>Возраст: 70 лет</p>
+        <p>Опыт: 10 лет и более</p>
+        <p>Оплата: от 1500 до 2000 руб./за выход</p>
+      </ion-label>
+    </ion-item>
+  </ng-container>
+
+
+
 </ion-content>

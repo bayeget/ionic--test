@@ -1,21 +1,10 @@
 <ion-content class="search-page">
-  <ion-list-header>
-    Поиск
-  </ion-list-header>
-  <ion-segment (ionChange)="segmentChanged($event)" class="search-segment">
-    <ion-segment-button value="nanny">
-      <ion-label>Няни</ion-label>
-    </ion-segment-button>
-    <ion-segment-button value="housekeeper">
-      <ion-label>Домработницы</ion-label>
-    </ion-segment-button>
-    <ion-segment-button value="nurse">
-      <ion-label>Сиделки</ion-label>
-    </ion-segment-button>
-    <ion-segment-button value="tutor">
-      <ion-label>Репетиторы</ion-label>
-    </ion-segment-button>
-  </ion-segment>
+  <div class="nav-bar">
+    <div class="nav-bar__item  nav-bar__item--active">Няни</div>
+    <div class="nav-bar__item">Домработницы</div>
+    <div class="nav-bar__item">Сиделки</div>
+    <div class="nav-bar__item">Репетиторы</div>
+  </div>
 
   <ion-card class="resume-card">
     <img src="https://r2.pomogatel.ru/m/eecddaa3eb2b4e42b61cf40467381a77.jpg" alt="" />
