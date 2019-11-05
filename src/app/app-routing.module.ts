@@ -8,6 +8,8 @@ import { Tab3Page } from './tab3/tab3.page';
 import { Tab1PageModule } from './tab1/tab1.module';
 import { Tab2PageModule } from './tab2/tab2.module';
 import { Tab3PageModule } from './tab3/tab3.module';
+import { ResumePage } from './resume/resume.page';
+import { ResumePageModule } from './resume/resume.module';
 
 const routes: Routes = [
   {
@@ -18,6 +20,7 @@ const routes: Routes = [
   { path: 'tab2', component: Tab2Page },
   { path: 'tab3', component: Tab3Page },
   { path: 'tab4', component: Tab4Page },
+  { path: 'resume', component:  ResumePage},
 
 ];
 
@@ -27,7 +30,8 @@ const routes: Routes = [
     Tab1PageModule,
     Tab2PageModule,
     Tab3PageModule,
-    Tab4PageModule
+    Tab4PageModule,
+    ResumePageModule
   ],
   exports: [RouterModule]
 })
