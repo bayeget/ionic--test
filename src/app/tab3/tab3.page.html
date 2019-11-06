@@ -1,9 +1,106 @@
+<ion-header>
+    <ion-segment (ionChange)="segmentChanged($event)" scrollable mode="md">
+      <ion-segment-button value="all">
+        <ion-label>Все чаты</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="response">
+        <ion-label>Отклики</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-header>
+
 <ion-content>
   <ion-list>
-    <div class="nav-bar">
+    <!-- <div class="nav-bar">
       <div class="nav-bar__item  nav-bar__item--active">Все чаты</div>
       <div class="nav-bar__item">Отклики</div>
-    </div>
+    </div> -->
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="https://r2.pomogatel.ru/m/eecddaa3eb2b4e42b61cf40467381a77.jpg">
+      </ion-avatar>
+      <ion-label>
+        <h2>Finn</h2>
+        <h3>I'm a big deal</h3>
+        <p>Listen, I've had a pretty messed up day...</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="https://r2.pomogatel.ru/m/e8287ec4dd7d496c91d08a7bbb1a3152.jpg">
+      </ion-avatar>
+      <ion-label>
+        <h2>Han</h2>
+        <h3>Look, kid...</h3>
+        <p>I've got enough on my plate as it is, and I...</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="https://r2.pomogatel.ru/m/6dc72019fd734bfc94b2433b42f26269.jpg">
+      </ion-avatar>
+      <ion-label>
+        <h2>Rey</h2>
+        <h3>I can handle myself</h3>
+        <p>You will remove these restraints and leave...</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="https://r2.pomogatel.ru/m/ead14e01fe2846ff8783419ce6e0e549.jpg">
+      </ion-avatar>
+      <ion-label>
+        <h2>Luke</h2>
+        <h3>Your thoughts betray you</h3>
+        <p>I feel the good in you, the conflict...</p>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="https://r2.pomogatel.ru/m/eecddaa3eb2b4e42b61cf40467381a77.jpg">
+      </ion-avatar>
+      <ion-label>
+        <h2>Finn</h2>
+        <h3>I'm a big deal</h3>
+        <p>Listen, I've had a pretty messed up day...</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="https://r2.pomogatel.ru/m/e8287ec4dd7d496c91d08a7bbb1a3152.jpg">
+      </ion-avatar>
+      <ion-label>
+        <h2>Han</h2>
+        <h3>Look, kid...</h3>
+        <p>I've got enough on my plate as it is, and I...</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="https://r2.pomogatel.ru/m/6dc72019fd734bfc94b2433b42f26269.jpg">
+      </ion-avatar>
+      <ion-label>
+        <h2>Rey</h2>
+        <h3>I can handle myself</h3>
+        <p>You will remove these restraints and leave...</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="https://r2.pomogatel.ru/m/ead14e01fe2846ff8783419ce6e0e549.jpg">
+      </ion-avatar>
+      <ion-label>
+        <h2>Luke</h2>
+        <h3>Your thoughts betray you</h3>
+        <p>I feel the good in you, the conflict...</p>
+      </ion-label>
+    </ion-item>
 
     <ion-item>
       <ion-avatar slot="start">
